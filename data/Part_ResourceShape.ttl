@@ -1,0 +1,299 @@
+@prefix oslc: <http://open-services.net/ns/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+AML> a oslc:Property ;
+    oslc:name "Part+AML" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+AML/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Alternate> a oslc:Property ;
+    oslc:name "Part+Alternate" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+Alternate/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+BOM> a oslc:Property ;
+    oslc:name "Part+BOM" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+BOM/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+CAD> a oslc:Property ;
+    oslc:name "Part+CAD" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+CAD/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Changes> a oslc:Property ;
+    oslc:name "Part+Changes" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+Changes/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Document> a oslc:Property ;
+    oslc:name "Part+Document" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+Document/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Goal> a oslc:Property ;
+    oslc:name "Part+Goal" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+Goal/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+MultiLevel+BOM> a oslc:Property ;
+    oslc:name "Part+MultiLevel+BOM" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part+MultiLevel+BOM/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#classification> a oslc:Property ;
+    oslc:name "classification" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#config_id> a oslc:Property ;
+    oslc:name "config_id" ;
+    oslc:occurs oslc:Exactly-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Part/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#cost> a oslc:Property ;
+    oslc:name "cost" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:decimal .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#cost_basis> a oslc:Property ;
+    oslc:name "cost_basis" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#created_by_id> a oslc:Property ;
+    oslc:name "created_by_id" ;
+    oslc:occurs oslc:Exactly-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/User/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#created_on> a oslc:Property ;
+    oslc:name "created_on" ;
+    oslc:occurs oslc:Exactly-one ;
+    oslc:valueType xsd:datetime .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#css> a oslc:Property ;
+    oslc:name "css" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#current_state> a oslc:Property ;
+    oslc:name "current_state" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Life+Cycle+State/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#description> a oslc:Property ;
+    oslc:name "description" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#effective_date> a oslc:Property ;
+    oslc:name "effective_date" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:datetime .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#external_id> a oslc:Property ;
+    oslc:name "external_id" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#external_owner> a oslc:Property ;
+    oslc:name "external_owner" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#external_type> a oslc:Property ;
+    oslc:name "external_type" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#generation> a oslc:Property ;
+    oslc:name "generation" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:integer .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#has_change_pending> a oslc:Property ;
+    oslc:name "has_change_pending" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:boolean .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#id> a oslc:Property ;
+    oslc:name "id" ;
+    oslc:occurs oslc:Exactly-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#is_current> a oslc:Property ;
+    oslc:name "is_current" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:boolean .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#is_released> a oslc:Property ;
+    oslc:name "is_released" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:boolean .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#item_number> a oslc:Property ;
+    oslc:name "item_number" ;
+    oslc:occurs oslc:Exactly-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#keyed_name> a oslc:Property ;
+    oslc:name "keyed_name" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#locked_by_id> a oslc:Property ;
+    oslc:name "locked_by_id" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/User/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#major_rev> a oslc:Property ;
+    oslc:name "major_rev" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#make_buy> a oslc:Property ;
+    oslc:name "make_buy" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#managed_by_id> a oslc:Property ;
+    oslc:name "managed_by_id" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Identity/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#minor_rev> a oslc:Property ;
+    oslc:name "minor_rev" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#modified_by_id> a oslc:Property ;
+    oslc:name "modified_by_id" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/User/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#modified_on> a oslc:Property ;
+    oslc:name "modified_on" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:datetime .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#name> a oslc:Property ;
+    oslc:name "name" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#new_version> a oslc:Property ;
+    oslc:name "new_version" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:boolean .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#not_lockable> a oslc:Property ;
+    oslc:name "not_lockable" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:boolean .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#owned_by_id> a oslc:Property ;
+    oslc:name "owned_by_id" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Identity/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#permission_id> a oslc:Property ;
+    oslc:name "permission_id" ;
+    oslc:occurs oslc:Exactly-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Permission/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#release_date> a oslc:Property ;
+    oslc:name "release_date" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:datetime .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#state> a oslc:Property ;
+    oslc:name "state" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#superseded_date> a oslc:Property ;
+    oslc:name "superseded_date" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:datetime .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#team_id> a oslc:Property ;
+    oslc:name "team_id" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/Team/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#tgv_Parts+and+Owners+3> a oslc:Property ;
+    oslc:name "tgv_Parts+and+Owners+3" ;
+    oslc:occurs oslc:Zero-or-many ;
+    oslc:propertyDefinition <http://127.0.0.1:5000/api/oslc/tgv_Parts+and+Owners+3/resourceShape> .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#thumbnail> a oslc:Property ;
+    oslc:name "thumbnail" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#unit> a oslc:Property ;
+    oslc:name "unit" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#weight> a oslc:Property ;
+    oslc:name "weight" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:decimal .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape#weight_basis> a oslc:Property ;
+    oslc:name "weight_basis" ;
+    oslc:occurs oslc:Zero-or-one ;
+    oslc:valueType xsd:string .
+
+<http://127.0.0.1:5000/api/oslc/Part/resourceShape> a oslc:ResourceShape ;
+    oslc:property <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+AML>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Alternate>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+BOM>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+CAD>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Changes>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Document>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+Goal>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#Part+MultiLevel+BOM>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#classification>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#config_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#cost>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#cost_basis>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#created_by_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#created_on>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#css>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#current_state>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#description>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#effective_date>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#external_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#external_owner>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#external_type>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#generation>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#has_change_pending>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#is_current>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#is_released>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#item_number>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#keyed_name>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#locked_by_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#major_rev>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#make_buy>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#managed_by_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#minor_rev>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#modified_by_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#modified_on>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#name>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#new_version>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#not_lockable>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#owned_by_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#permission_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#release_date>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#state>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#superseded_date>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#team_id>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#tgv_Parts+and+Owners+3>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#thumbnail>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#unit>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#weight>,
+        <http://127.0.0.1:5000/api/oslc/Part/resourceShape#weight_basis> .
+

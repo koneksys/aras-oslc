@@ -1,0 +1,31 @@
+
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+      versionSpec: '3.6'
+
+- script: |
+    python --version
+    python -m pip install --upgrade pip
+    pip install -e .
+  displayName: 'python environment'
+  name: 'pythonenv'
+
+- script: |
+    pip install pytest pytest-mock pytest-html pytest-cov
+    pytest -v tests/* \
+      --junitxml=tests-reports/report.xml \
+      --html=tests-reports/report.html \
+      --cov-config=.coveragerc \
+      --cov-report xml:tests-reports/coverage.xml \
+      --cov-report html:tests-reports/coverage-html \
+      --cov=./ ./tests/
+  displayName: 'tests'
+  name: 'tests'
+  continueOnError: true
