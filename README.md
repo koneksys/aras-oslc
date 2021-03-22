@@ -22,37 +22,22 @@ within your folder location.
 ### Compiling the code
 
 For generating/installing the required environment and dependencies for running
-the application, it is required to execute some prior steps.
-
-> Note: The project uses Makefile to generate this elements, make sure that the
-> necessary packages are installed.  
-
-There are different sections within the Makefile, the easiest way to install
-all the elements required for the execution of the project is making all the 
-components:
+the application, it is required to create a virtual environment and export the following environment variables.
 
 ```bash
-make all
+FLASK_APP=aras_oslc_api:app
+FLASK_ENV=development
+FLASK_DEBUG=True
 ```
-
-This will create the virtual environment and will install all the dependencies
-for the execution of the project.
-
-There are other steps that could be find in the `Makefile` for executing
-specific actions. 
 
 ### Installing the application ###
 
 To install the application it is necessary to go into the 
-`aras-oslc-api` folder and run the follow command:
+`aras-oslc` folder and run the follow command:
 
 ```bash
-pip install [-e] .
+pip install -r requirements.txt
 ```
-
-Remember, the `-e` parameter is for telling to the installer
-that it is possible to edit the installation, this is
-useful when it will be for a developing environment.
 
 The previous command will install the application within
 your environment.

@@ -198,3 +198,11 @@ werkzeug==1.0.1 \
 # WARNING: The following packages were not pinned, but pip requires them to be
 # pinned when the requirements file includes hashes. Consider using the --allow-unsafe flag.
 # setuptools
+
+requests~=2.25.1
+python-dotenv~=0.15.0
+rdflib~=5.0.0
+urllib3~=1.26.2
+Werkzeug~=1.0.1
+Flask~=1.1.2
+setuptools~=54.2.0
