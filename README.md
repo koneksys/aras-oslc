@@ -13,10 +13,10 @@ To get the code of this project for testing or installing it,
 it is required to use some git commands for it.
 
 ```bash
-git clone git@bitbucket.org:koneksys/aras-oslc-api.git
+git clone git@github.com:koneksys/aras-oslc.git
 ```
 
-This command will create a folder called `aras-oslc-api`
+This command will create a folder called `aras-oslc`
 within your folder location.
 
 ### Compiling the code
